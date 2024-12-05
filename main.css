@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.exercise {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.exercise.header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.exercise .label,
+.exerciseheader {
+    width: 7vw;
+    text-align: center;
+    align-items: center;
+}
+
+.exercise input {
+    padding: 5px;
+    width: 7vw;
+}
+
+.exercise#set input,
+.exercise#reps input {
+    width: 1vw;
+}
+
+.exercise button.selected {
+    background-color: #dc3545;
+}
+
+/* Button styles */
+button {
+    display: block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+}
+
+#connectButton {
+    background-color: #007BFF; /* Blue when not connected */
+    color: white;
+}
+
+#connectButton.connected {
+    background-color: #28a745; /* Green when connected */
+}
+
+#connectButton.connected:hover {
+    background-color: #dc3545; /* Red when hovered and connected */
+}
+
+.ble-connection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ble-connection label,
+.ble-connection input,
+.ble-connection button,
+.ble-connection p {
+    margin: 0;
+}
